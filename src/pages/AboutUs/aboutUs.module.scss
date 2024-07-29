@@ -3,6 +3,10 @@
 $maxWidth: 800px;
 $maxHeight: 450px;
 
+.loading {
+    height: 100vh;
+}
+
 .mainContainer {
     background-image: url('../../assets/productBackground.jpg');
     background-size: cover;

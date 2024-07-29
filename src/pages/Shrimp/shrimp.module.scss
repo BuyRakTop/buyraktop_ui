@@ -4,6 +4,10 @@
 
 @import '../../variables';
 
+.loading {
+    height: 100vh;
+}
+
 .productContainer {
     background-image: url('../../assets/productBackground.jpg');
     background-size: cover;

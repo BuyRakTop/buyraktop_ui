@@ -1,24 +1,44 @@
+import { useState } from 'react';
+import ReactLoading from 'react-loading';
 import { useTranslation } from 'react-i18next';
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
 import { promotion_image_1, promotion_image_2, promotion_image_3, promotionsPhoto } from '../../assets';
 import style from './promotions.module.scss';
 
-export const Promotions: React.FC = () => (
-    <div className="d-flex flex-column">
-        {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={promotionsPhoto} />
 
-        {/* Advertising Block */}
-        <AdvertisingBlockOne />
+export const Promotions: React.FC = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    setTimeout(() => setIsLoading(false), 1500);
 
-        {/* Products Block */}
-        <PromotionContent />
+    return (
+        <div className="d-flex flex-column">
+            {
+                !isLoading
+                    ? (
+                        <>
+                            {/* Main Background Photo Block */}
+                            <MainInfoContainer mainBackgroundPhoto={promotionsPhoto} />
 
-        {/* Advertising Block */}
-        <AdvertisingBlockTwo />
-    </div>
-);
+                            {/* Advertising Block */}
+                            <AdvertisingBlockOne />
+
+                            {/* Products Block */}
+                            <PromotionContent />
+
+                            {/* Advertising Block */}
+                            <AdvertisingBlockTwo />
+                        </>
+                    )
+                    : (
+                        <div className={`${style.loading} d-flex justify-content-center align-items-center`}>
+                            <ReactLoading type="spinningBubbles" color="#cccccc" height={75} width={75} />
+                        </div>
+                    )
+            }
+        </div>
+    );
+}
 
 const PromotionContent = () => {
     const { t: translation } = useTranslation();

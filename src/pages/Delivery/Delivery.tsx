@@ -1,26 +1,45 @@
+import { useState } from 'react';
+import ReactLoading from 'react-loading';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock, faCreditCard, faWallet } from '@fortawesome/free-solid-svg-icons';
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
 import { deliverPhoto, deliveryPhoto } from '../../assets';
 import style from './delivery.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faCreditCard, faWallet } from '@fortawesome/free-solid-svg-icons';
 
-export const Delivery: React.FC = () => (
-    <div className="d-flex flex-column">
-        {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={deliveryPhoto} />
+export const Delivery: React.FC = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    setTimeout(() => setIsLoading(false), 1500);
 
-        {/* Advertising Block */}
-        <AdvertisingBlockOne />
+    return (
+        <div className="d-flex flex-column">
+            {
+                !isLoading
+                    ? (
+                        <>
+                            {/* Main Background Photo Block */}
+                            <MainInfoContainer mainBackgroundPhoto={deliveryPhoto} />
 
-        {/* Products Block */}
-        <DeliveryContent />
+                            {/* Advertising Block */}
+                            <AdvertisingBlockOne />
 
-        {/* Advertising Block */}
-        <AdvertisingBlockTwo />
-    </div>
-);
+                            {/* Products Block */}
+                            <DeliveryContent />
+
+                            {/* Advertising Block */}
+                            <AdvertisingBlockTwo />
+                        </>
+                    )
+                    : (
+                        <div className={`${style.loading} d-flex justify-content-center align-items-center`}>
+                            <ReactLoading type="spinningBubbles" color="#cccccc" height={75} width={75} />
+                        </div>
+                    )
+            }
+        </div>
+    );
+}
 
 const DeliveryContent: React.FC = () => {
     const { t: translation } = useTranslation();
