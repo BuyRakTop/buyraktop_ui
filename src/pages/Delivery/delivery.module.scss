@@ -1,0 +1,62 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+.mainContainer {
+    background-image: url('../../assets/productBackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.textYellow {
+    color: $yellow;
+}
+
+.header,
+.deliveryDescription {
+    font-size: 1.25rem;
+    color: $lightGrey;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 2rem;
+    }
+}
+
+.deliverPhotoContainer,
+.deliverPhoto {
+    width: 250px;
+    height: 250px;
+
+    @include media-breakpoint-up(md) {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.deliverPhoto {
+    object-fit: cover;
+}
+
+.deliveryAdvantages {
+    max-width: 400px;
+
+    @include media-breakpoint-up(md) {
+        max-width: 800px;
+    }
+}
+
+.advantItem {
+    color: $lightGrey;
+
+    .icon {
+        color: $lightGreenBlue;
+        width: $icon_30;
+        height: $icon_30;
+    }
+}

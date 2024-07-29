@@ -1,0 +1,122 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+$maxWidth: 1220px;
+$maxHeight: 600px;
+
+.mainContainer {
+    background-image: url('../../assets/productBackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    color: $lightGrey;
+}
+
+.contactForm {
+    background-color: transColor($grey, 0.89);
+
+    .header {
+        color: $yellow;
+    }
+
+    .formGroup {
+        label {
+            color: $yellow;
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+    }
+
+    .formControl {
+        background-color: $grey;
+        color: $lightGrey;
+        border: none;
+        border-bottom: 1px solid $lightGrey;
+
+        &:focus {
+            color: $lightGrey;
+            box-shadow: none;
+            border-color: $yellow;
+            background-color: $middleGrey;
+        }
+    }
+
+    .sendBtn {
+        width: 160px;
+        height: 50px;
+        background-color: $greenBlue;
+        color: $lightGrey;
+        border-radius: 0 1rem 0 1rem;
+
+        &:hover {
+            background-color: $darkGreenBlue;
+            cursor: pointer;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 190px;
+            height: 65px;
+        }
+    
+        @include media-breakpoint-up(xl) {
+            width: 220px;
+            height: 65px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: $maxHeight;
+    }
+}
+
+.contactInfo {
+    .contactItem {
+        color: $lightGrey;
+    
+        .icon {
+            color: $lightGreenBlue;
+            width: $icon_40;
+            height: $icon_40;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: $maxHeight;
+    }
+}
+
+.mapContainer {
+    padding-bottom: min(70%, $maxHeight);
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+
+    & iframe {
+        max-width: $maxWidth;
+        max-height: $maxHeight;
+    }
+}
+
+.sliderContainer {
+    max-width: 1020px;
+    max-height: 300px;
+}
+
+.slideCard {
+    background-color: $greenBlue;
+    border-radius: 0 3rem 0 3rem;
+    min-height: 160px;
+}
+
+.reviewerImg {
+    top: -25%;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+}

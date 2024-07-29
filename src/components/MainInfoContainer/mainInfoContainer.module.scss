@@ -1,0 +1,50 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+.mainInfoContainer {
+    min-height: 380px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.35);
+        z-index: 3;
+    }
+
+    @include media-breakpoint-up(md) {
+        min-height: 700px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-height: 900px;
+    }
+}
+
+.infoLogo {
+    z-index: 4;
+}
+
+.infoDelivery {
+    z-index: 4;
+
+    .infoDeliveryText,
+    .infoDeliveryPhone {
+        color: $lightGrey;
+        font-size: 1.25rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.75rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 2rem;
+        }
+    }
+}

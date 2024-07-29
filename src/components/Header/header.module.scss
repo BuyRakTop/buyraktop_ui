@@ -1,0 +1,114 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+.headerContainer {
+  height: 60px;
+  background-color: rgba(31, 31, 31, 0.89);
+
+  @include media-breakpoint-up(md) {
+    height: 90px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 115px;
+  }
+}
+
+.menuNavItem a {
+  color: $lightGrey;
+  cursor: pointer;
+
+  &:hover {
+    color: $lightGreenBlue;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 1.25rem;
+  }
+}
+
+.menuNavItem [aria-current="page"] {
+  color: $lightGreenBlue;
+  text-decoration: underline;
+}
+
+.socialBlock,
+.langBlock {
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: $lightGrey;
+  cursor: pointer;
+
+  &:hover {
+    color: $greenBlue;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 1.75rem;
+  }
+}
+
+.userLockIcon {
+  color: $lightGrey;
+  cursor: pointer;
+
+  &:hover {
+    color: $greenBlue;
+  }
+}
+
+.userMobileSignBtn {
+  width: 20px;
+  height: 20px;
+}
+
+.userSignBtn {
+  width: 75px;
+  height: 45px;
+  border: 1px solid $lightGrey;
+  border-radius: 0 50% 0 50%;
+
+  & a {
+    color: $lightGrey;
+  }
+
+  &:hover {
+    background-color: $greenBlue;
+    border-color: $greenBlue;
+    cursor: pointer;
+  }
+}
+
+.headerLeftSide {
+  @include media-breakpoint-up(md) {
+    max-width: 700px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 900px;
+  }
+}
+
+.headerRightSide {
+  @include media-breakpoint-up(xl) {
+    min-width: 350px;
+  }
+}
+
+.flagContainer {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}

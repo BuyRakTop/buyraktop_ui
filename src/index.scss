@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $montserrat;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 375px;
+  max-width: 1920px;
+  background-color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

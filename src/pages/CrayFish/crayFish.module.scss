@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+.productContainer {
+    background-image: url('../../assets/productBackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cardsBlock {
+    max-width: 1440px;
+    padding: 1rem;
+
+    @include media-breakpoint-up(md) {
+        padding: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}

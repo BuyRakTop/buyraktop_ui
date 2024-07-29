@@ -1,0 +1,76 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+.card {
+    margin-bottom: 50px;
+    min-width: 340px;
+    width: 100%;
+    max-width: 580px;
+
+    background-color: transColor($grey, 80%);
+
+    @include media-breakpoint-up(md) {
+        width: calc(50% - 12px);
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-width: 333px;
+        width: calc(33.3% - 24px);
+        max-width: 400px;
+    }
+
+    .shrampView {
+        min-height: 300px;
+
+        .shrimpTypeBlock {
+            border-radius: 0 0 1rem 0;
+            background-color: transColor($lightBlack, 70%);
+        }
+
+        .shrimpType {
+            color: $lightGrey;
+        }
+    }
+
+    .shrampInfo {
+        color: $lightGrey;
+    }
+
+    .shrampPrice {
+        color: $yellow;
+    }
+
+    .shrampOrderBtn,
+    .shrampNotAvailableBtn {
+        width: 185px;
+        height: 65px;
+        border-radius: 0 2rem 0 2rem;
+    }
+
+    .shrampOrderBtn {
+        background-color: $greenBlue;
+        color: $lightGrey;
+
+        &:hover {
+            background-color: $darkGreenBlue;
+            cursor: pointer;
+        }
+
+        & .icon {
+            width: $icon_30;
+            height: $icon_30;
+        }
+    }
+
+    .shrampNotAvailableBtn {
+        background-color: $lightGrey;
+        color: $white;
+
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+}

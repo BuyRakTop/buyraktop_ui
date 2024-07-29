@@ -1,0 +1,15 @@
+{
+    "header": "Header",
+    "welcome": "Welcome",
+    "cray_fish_raw": "Raw crayfish",
+    "cray_fish_boil": "Boil crayfish",
+
+    "buttons": {
+        
+    },
+
+    "adv": {
+        "free_delivery_brovary_p1": "Free",
+        "free_delivery_brovary_p2": "delivery in Brovary"
+    }
+}

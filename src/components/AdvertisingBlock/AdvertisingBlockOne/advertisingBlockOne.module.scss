@@ -1,0 +1,11 @@
+@import '../../../variables';
+
+.advBackground {
+    height: 125px;
+    background-color: $grey;
+    color: $lightGrey;
+
+    & span {
+        color: $yellow;
+    }
+}

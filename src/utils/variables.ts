@@ -1,0 +1,2 @@
+export const GOOGLE_LOCATION_URL = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4064.6752459900927!2d30.7892757200797!3d50.51502971609718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d9539ba62d8b%3A0xa02bc840f3480933!2z0KHRltC70YzQv9C-!5e0!3m2!1sru!2sua!4v1721934979153!5m2!1sru!2sua';
+export const HOW_COOK_YOUTUBE_URL = 'https://www.youtube.com/embed/W_2n7zU5K4w?si=e3W3TYXiVRpqCQNI';

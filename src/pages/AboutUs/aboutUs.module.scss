@@ -1,0 +1,44 @@
+@import '../../variables';
+
+$maxWidth: 800px;
+$maxHeight: 450px;
+
+.mainContainer {
+    background-image: url('../../assets/productBackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    color: $lightGrey;
+}
+
+.description {
+    max-width: $maxWidth;
+    color: $lightGrey;
+
+    & span {
+        color: $yellow;
+    }
+}
+
+.qualityItem {
+    color: $lightGrey;
+
+    .icon {
+        color: $lightGreenBlue;
+        width: $icon_30;
+        height: $icon_30;
+    }
+}
+
+.videoContainer {
+    padding-bottom: min(56%, $maxHeight);
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+
+    & iframe {
+        max-width: $maxWidth;
+        max-height: $maxHeight;
+    }
+}

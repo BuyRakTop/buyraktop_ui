@@ -1,0 +1,24 @@
+// Functions
+@function transColor($color, $alpha) {
+    @return rgba(red($color), green($color), blue($color), $alpha);
+}
+
+// Colors
+$white: #FFFCFC;
+$lightBlack: #111111;
+$black: #000000;
+$yellow: #D9B601;
+$lightGrey: #cccccc;
+$grey: #1F1F1F;
+$middleGrey: #1A1A1A;
+$darkGrey: #161616;
+$greenBlue: #3DB5A5;
+$lightGreenBlue: #4DE0CD;
+$darkGreenBlue: #40A597;
+
+// Font
+$montserrat: 'Montserrat Alternates', sans-serif;
+
+// icon size
+$icon_30: 30px;
+$icon_40: 40px;

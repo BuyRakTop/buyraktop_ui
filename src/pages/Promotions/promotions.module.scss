@@ -1,0 +1,49 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+.mainContainer {
+    background-image: url('../../assets/productBackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    color: $lightGrey;
+}
+
+.textYellow {
+    color: $yellow;
+}
+
+.promtItems {
+    min-height: 600px;
+}
+
+.promtImageBlock {
+    min-height: 300px;
+}
+
+.promtHeader {
+    border-radius: 0 0 1rem 0;
+    min-width: 165px;
+    height: 65px;
+    background-color: transColor($lightBlack, 85%);
+}
+
+.promtItem {
+    background-color: transColor($grey, 85%);
+    max-width: 376px;
+    height: 600px;
+
+    @include media-breakpoint-up(md) {
+        max-width: 480px;
+    }
+}
+
+.promtDescription {
+    color: $lightGrey;
+    max-width: 300px;
+}

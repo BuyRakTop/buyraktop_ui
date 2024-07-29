@@ -1,0 +1,53 @@
+@import '../../variables';
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 375px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+
+    &.active {
+        transform: translateX(0);
+    }
+}
+
+.menuContent {
+    width: 375px;
+    height: 100%;
+    background-color: $black;
+}
+
+.menuIcon {
+    font-size: 2rem;
+    color: $lightGrey;
+    cursor: pointer;
+    
+    &:hover {
+        color: $greenBlue;
+    }
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 375px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+}
+
+.linkItem a {
+    color: $lightGrey;
+
+    &:hover {
+        color: $lightGreenBlue;
+    }
+}
+
+.linkItem [aria-current="page"] {
+    color: $lightGreenBlue;
+    text-decoration: underline;
+}

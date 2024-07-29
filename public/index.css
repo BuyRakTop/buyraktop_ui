@@ -1,0 +1,9 @@
+/* ----- Custome styles for card in slider on Contact page ------- */
+.slick-slider .slick-slide.slick-center > div > div > div {
+    background-color: #4DE0CD;
+}
+
+.slick-slider .slick-slide:not(.slick-center) > div > div > div {
+    background-color: #cccccc;
+}
+/* --------------------------------------------------------------- */

@@ -1,0 +1,72 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '../../variables';
+
+
+.footerContainer {
+    background-color: transColor($grey, 85%);
+    color: $lightGrey;
+}
+
+.footerLogoS {
+    display: flex;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.footerLogoM {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
+
+    @include media-breakpoint-up(xl) {
+        display: none;
+    }
+}
+
+.footerLogoL {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+        display: flex;
+    }
+}
+
+.privatePolicy,
+.companyName {
+    color: $lightGrey;
+    font-size: 0.75rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+
+    &:hover {
+        color: $greenBlue;
+    }
+}
+
+.footerNavItem a {
+    color: $lightGrey;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+    }
+
+    &:hover {
+        color: $greenBlue;
+        text-decoration: underline;
+    }
+}
+
+.schedule span,
+.bookingEnter span {
+    color: $yellow;
+}
