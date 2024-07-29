@@ -10,31 +10,18 @@
     color: $lightGrey;
 }
 
-.footerLogoS {
-    display: flex;
+.footerLogo {
+    width: 125px;
+    height: 55px;
 
     @include media-breakpoint-up(md) {
-        display: none;
-    }
-}
-
-.footerLogoM {
-    display: none;
-
-    @include media-breakpoint-up(md) {
-        display: flex;
+        width: 220px;
+        height: 100px;
     }
 
     @include media-breakpoint-up(xl) {
-        display: none;
-    }
-}
-
-.footerLogoL {
-    display: none;
-
-    @include media-breakpoint-up(xl) {
-        display: flex;
+        width: 255px;
+        height: 115px;
     }
 }
 

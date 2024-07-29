@@ -29,6 +29,21 @@
 
 .infoLogo {
     z-index: 4;
+
+    img {
+        width: 225px;
+        height: 100px;
+
+        @include media-breakpoint-up(md) {
+            width: 330px;
+            height: 145px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 430px;
+            height: 165px;
+        }
+    }
 }
 
 .infoDelivery {

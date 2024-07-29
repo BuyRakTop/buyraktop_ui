@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import { footerLogoS, footerLogoM, footerLogoL } from '../../assets';
+import { mainInfoLogo } from '../../assets';
 import style from './footer.module.scss';
 
 
@@ -13,9 +13,7 @@ export const Footer: React.FC = () => {
     <div className={`${style.footerContainer} d-flex flex-column flex-md-row px-3 px-md-4 px-xl-5 py-5`}>
       <div className="d-flex justify-content-between pt-3 flex-md-grow-1 ps-xl-5">
         <div className="d-flex flex-column">
-          <img className={style.footerLogoS} src={footerLogoS} alt="footerLogoS"/>
-          <img className={style.footerLogoM} src={footerLogoM} alt="footerLogoM"/>
-          <img className={style.footerLogoL} src={footerLogoL} alt="footerLogoL"/>
+          <img className={style.footerLogo} src={mainInfoLogo} alt={mainInfoLogo} />
 
           <Link
             to='/private-policy'

@@ -1,9 +1,4 @@
-import mainInfoLogoS from './mainInfoLogoS.png';
-import mainInfoLogoM from './mainInfoLogoM.png';
-import mainInfoLogoL from './mainInfoLogoL.png';
-import footerLogoS from './mainInfoLogoS.png';
-import footerLogoM from './footerLogoM.png';
-import footerLogoL from './footerLogoL.png';
+import mainInfoLogo from './mainInfoLogo.png';
 import crayfishPhoto from './crayfishPhoto.jpeg';
 import shrimpsPhoto from './shrimpsPhoto.jpg';
 import deliveryPhoto from './deliveryPhoto.jpg';
@@ -25,13 +20,10 @@ import shrimpAtlantic from './shrimp_atlantic.png';
 import shrimpLangoust from './shrimp_langoust.png';
 import shrimpBlackSea from './shrimp_blacksea.png';
 import shrimpTiger from './shrimp_tiger.png';
-
-
 import crayfish from './crayfish.png';
 
 export {
-    mainInfoLogoS, mainInfoLogoM, mainInfoLogoL, footerLogoS, footerLogoM, footerLogoL, crayfishPhoto, shrimpsPhoto,
-    deliveryPhoto, promotionsPhoto, productBackground, aboutUsPhoto, crayBoilPhoto, crayRawPhoto, reviewer_1, reviewer_2,
-    reviewer_3, deliverPhoto, promotion_image_1, promotion_image_2, promotion_image_3, flag_ua, flag_usa, shrimpAtlantic,
-    shrimpLangoust, shrimpBlackSea, shrimpTiger, crayfish,
+    mainInfoLogo, crayfishPhoto, shrimpsPhoto, deliveryPhoto, promotionsPhoto, productBackground, aboutUsPhoto,
+    crayBoilPhoto, crayRawPhoto, reviewer_1, reviewer_2, reviewer_3, deliverPhoto, promotion_image_1, promotion_image_2,
+    promotion_image_3, flag_ua, flag_usa, shrimpAtlantic, shrimpLangoust, shrimpBlackSea, shrimpTiger, crayfish,
 };
