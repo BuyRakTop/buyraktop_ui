@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 
-import { craySizeMapper } from '../../pages';
 import style from './crayCard.module.scss';
+import { crayfish } from '../../assets';
 
 interface CrayCardProps {
     isAvailable: boolean;
@@ -110,7 +110,6 @@ export const CrayCard: React.FC<CrayCardProps> = (props: CrayCardProps) => {
 
     const { isAvailable, crayPhoto, craySize, crayType } = props;
     const { weightItem, sizeItem, countItem, priceItem } = crayData[crayType][craySize];
-    const craySizePhoto = craySizeMapper[craySize];
 
     return (
         <div className={`${style.card} d-flex flex-column gap-3 pb-3 rounded-5`}>
@@ -118,7 +117,14 @@ export const CrayCard: React.FC<CrayCardProps> = (props: CrayCardProps) => {
                 <img className="position-absolute top-0 left-0 w-100 h-100 rounded-4 rounded-bottom-0 object-fit-cover" src={crayPhoto} alt={crayPhoto} />
                 <div className="position-absolute z-1 top-0 left-0 right-0 d-flex justify-content-between align-items-center w-100 ps-3">
                     <h3 className={`${style.sizeText} ps-1 pt-3`}>{craySize}</h3>
-                    <img className={`${style.craySizePhoto} w-50 px-2 py-1 `} src={craySizePhoto} alt={craySizePhoto} />
+                    <div className={`${style.craySizeBlock} px-1 pb-2 d-flex align-items-end`}>
+                        <img className={craySize === CraySize.XS ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
+                        <img className={craySize === CraySize.S ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
+                        <img className={craySize === CraySize.M ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
+                        <img className={craySize === CraySize.L ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
+                        <img className={craySize === CraySize.XL ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
+                        <img className={craySize === CraySize.XXL ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
+                    </div>
                 </div>
             </div>
 

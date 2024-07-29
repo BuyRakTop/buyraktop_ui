@@ -4,12 +4,6 @@ import { useTranslation } from 'react-i18next';
 import {
     crayBoilPhoto,
     crayRawPhoto,
-    craySizeL,
-    craySizeM,
-    craySizeS,
-    craySizeXL,
-    craySizeXS,
-    craySizeXXL,
     crayfishPhoto,
 } from '../../assets';
 import {
@@ -21,15 +15,6 @@ import {
     CrayType,
 } from '../../components';
 import style from './crayFish.module.scss';
-
-export const craySizeMapper = {
-    XS: craySizeXS,
-    S: craySizeS,
-    M: craySizeM,
-    L: craySizeL,
-    XL: craySizeXL,
-    XXL: craySizeXXL,
-}
 
 export const CrayFish: React.FC = () => (
     <div className="d-flex flex-column">

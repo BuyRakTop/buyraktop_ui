@@ -12,12 +12,6 @@ import aboutUsPhoto from './aboutUsPhoto.jpg';
 import productBackground from './productBackground.jpg';
 import crayBoilPhoto from './crayBoilPhoto.png';
 import crayRawPhoto from './crayRawPhoto.png';
-import craySizeXS from './craySizeXS.png';
-import craySizeS from './craySizeS.png';
-import craySizeM from './craySizeM.png';
-import craySizeL from './craySizeL.png';
-import craySizeXL from './craySizeXL.png';
-import craySizeXXL from './craySizeXXL.png';
 import reviewer_1 from './reviewer_1.png';
 import reviewer_2 from './reviewer_2.png';
 import reviewer_3 from './reviewer_3.png';
@@ -32,9 +26,12 @@ import shrimpLangoust from './shrimp_langoust.png';
 import shrimpBlackSea from './shrimp_blacksea.png';
 import shrimpTiger from './shrimp_tiger.png';
 
+
+import crayfish from './crayfish.png';
+
 export {
     mainInfoLogoS, mainInfoLogoM, mainInfoLogoL, footerLogoS, footerLogoM, footerLogoL, crayfishPhoto, shrimpsPhoto,
-    deliveryPhoto, promotionsPhoto, productBackground, aboutUsPhoto, crayBoilPhoto, crayRawPhoto, craySizeXS, craySizeS,
-    craySizeM, craySizeL, craySizeXL, craySizeXXL, reviewer_1, reviewer_2, reviewer_3, deliverPhoto, promotion_image_1,
-    promotion_image_2, promotion_image_3, flag_ua, flag_usa, shrimpAtlantic, shrimpLangoust, shrimpBlackSea, shrimpTiger,
+    deliveryPhoto, promotionsPhoto, productBackground, aboutUsPhoto, crayBoilPhoto, crayRawPhoto, reviewer_1, reviewer_2,
+    reviewer_3, deliverPhoto, promotion_image_1, promotion_image_2, promotion_image_3, flag_ua, flag_usa, shrimpAtlantic,
+    shrimpLangoust, shrimpBlackSea, shrimpTiger, crayfish,
 };
