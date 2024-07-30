@@ -18,8 +18,9 @@ import {
 import style from './crayFish.module.scss';
 
 export const CrayFish: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    setTimeout(() => setIsLoading(false), 1500);
+    // const [isLoading, setIsLoading] = useState(true);
+    // setTimeout(() => setIsLoading(false), 1500);
+    const isLoading = false;
 
     return (
         <div className="d-flex flex-column">

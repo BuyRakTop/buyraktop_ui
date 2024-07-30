@@ -1,5 +1,6 @@
 import mainInfoLogo from './mainInfoLogo.png';
-import crayfishPhoto from './crayfishPhoto.jpeg';
+// import crayfishPhoto from './crayfishPhoto.jpeg';
+import crayfishPhoto from './crayfishPhoto.webp';
 import shrimpsPhoto from './shrimpsPhoto.jpg';
 import deliveryPhoto from './deliveryPhoto.jpg';
 import promotionsPhoto from './promotionsPhoto.jpg';
