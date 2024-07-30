@@ -24,6 +24,7 @@ export const MainInfoContainer: React.FC<MainInfoContainerProps> = (props: MainI
                 srcSet={`${photo480} 480w, ${photo1280} 1280w, ${photo1851} 1851w, ${photo2797} 2797w, ${photo3308} 3308w, ${photo3702} 3702w `}
                 src={photo3702}
                 alt={photo3702}
+                loading="lazy"
             />
 
             <div className="d-flex flex-column justify-content-center align-items-center position-absolute">
