@@ -5,19 +5,19 @@ import { faEnvelope, faLocationDot, faMobileScreenButton } from '@fortawesome/fr
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
 import { GOOGLE_LOCATION_URL, REVIEWS } from '../../utils';
-import { crayfishPhoto } from '../../assets';
+import { shrimpsPhoto1280, shrimpsPhoto1851, shrimpsPhoto2797, shrimpsPhoto3308, shrimpsPhoto3702, shrimpsPhoto480 } from '../../assets';
 import style from './contacts.module.scss';
 
 export const Contacts: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
         <MainInfoContainer
-            photo480={crayfishPhoto}
-            photo1280={crayfishPhoto}
-            photo1851={crayfishPhoto}
-            photo2797={crayfishPhoto}
-            photo3308={crayfishPhoto}
-            photo3702={crayfishPhoto}
+            photo480={shrimpsPhoto480}
+            photo1280={shrimpsPhoto1280}
+            photo1851={shrimpsPhoto1851}
+            photo2797={shrimpsPhoto2797}
+            photo3308={shrimpsPhoto3308}
+            photo3702={shrimpsPhoto3702}
         />
 
         {/* Advertising Block */}

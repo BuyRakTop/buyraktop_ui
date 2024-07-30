@@ -4,19 +4,19 @@ import { faLeaf, faThumbsUp, faTruck, faWallet } from '@fortawesome/free-solid-s
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
 import { HOW_COOK_YOUTUBE_URL } from '../../utils';
-import { aboutUsPhoto } from '../../assets';
+import { aboutUsPhoto1280, aboutUsPhoto1851, aboutUsPhoto2797, aboutUsPhoto3308, aboutUsPhoto3702, aboutUsPhoto480 } from '../../assets';
 import style from './aboutUs.module.scss';
 
 export const AboutUs: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
         <MainInfoContainer
-            photo480={aboutUsPhoto}
-            photo1280={aboutUsPhoto}
-            photo1851={aboutUsPhoto}
-            photo2797={aboutUsPhoto}
-            photo3308={aboutUsPhoto}
-            photo3702={aboutUsPhoto}
+            photo480={aboutUsPhoto480}
+            photo1280={aboutUsPhoto1280}
+            photo1851={aboutUsPhoto1851}
+            photo2797={aboutUsPhoto2797}
+            photo3308={aboutUsPhoto3308}
+            photo3702={aboutUsPhoto3702}
         />
 
         {/* Advertising Block */}

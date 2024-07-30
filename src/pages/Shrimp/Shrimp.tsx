@@ -1,4 +1,7 @@
-import { shrimpAtlantic, shrimpBlackSea, shrimpLangoust, shrimpTiger, shrimpsPhoto } from '../../assets';
+import {
+    shrimpAtlantic, shrimpBlackSea, shrimpLangoust, shrimpsPhoto1280, shrimpsPhoto1851,
+    shrimpsPhoto2797, shrimpsPhoto3308, shrimpsPhoto3702, shrimpsPhoto480, shrimpTiger,
+} from '../../assets';
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer, ShrimpCard, ShrimpType } from '../../components';
 import style from './shrimp.module.scss';
 
@@ -6,12 +9,12 @@ export const Shrimp: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
         <MainInfoContainer
-            photo480={shrimpsPhoto}
-            photo1280={shrimpsPhoto}
-            photo1851={shrimpsPhoto}
-            photo2797={shrimpsPhoto}
-            photo3308={shrimpsPhoto}
-            photo3702={shrimpsPhoto}
+            photo480={shrimpsPhoto480}
+            photo1280={shrimpsPhoto1280}
+            photo1851={shrimpsPhoto1851}
+            photo2797={shrimpsPhoto2797}
+            photo3308={shrimpsPhoto3308}
+            photo3702={shrimpsPhoto3702}
         />
 
         {/* Advertising Block */}

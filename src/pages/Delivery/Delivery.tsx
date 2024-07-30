@@ -3,19 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faCreditCard, faWallet } from '@fortawesome/free-solid-svg-icons';
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
-import { deliverPhoto, deliveryPhoto } from '../../assets';
+import {
+    deliverPhoto, deliveryPhoto1280, deliveryPhoto1851, deliveryPhoto2797,
+    deliveryPhoto3308, deliveryPhoto3702, deliveryPhoto480,
+} from '../../assets';
 import style from './delivery.module.scss';
 
 export const Delivery: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
         <MainInfoContainer
-            photo480={deliveryPhoto}
-            photo1280={deliveryPhoto}
-            photo1851={deliveryPhoto}
-            photo2797={deliveryPhoto}
-            photo3308={deliveryPhoto}
-            photo3702={deliveryPhoto}
+            photo480={deliveryPhoto480}
+            photo1280={deliveryPhoto1280}
+            photo1851={deliveryPhoto1851}
+            photo2797={deliveryPhoto2797}
+            photo3308={deliveryPhoto3308}
+            photo3702={deliveryPhoto3702}
         />
 
         {/* Advertising Block */}

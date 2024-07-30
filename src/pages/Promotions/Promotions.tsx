@@ -1,19 +1,22 @@
 import { useTranslation } from 'react-i18next';
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
-import { promotion_image_1, promotion_image_2, promotion_image_3, promotionsPhoto } from '../../assets';
+import {
+    promotion_image_1, promotion_image_2, promotion_image_3, promotionsPhoto1280, promotionsPhoto1851,
+    promotionsPhoto2797, promotionsPhoto3308, promotionsPhoto3702, promotionsPhoto480,
+} from '../../assets';
 import style from './promotions.module.scss';
 
 export const Promotions: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
         <MainInfoContainer
-            photo480={promotionsPhoto}
-            photo1280={promotionsPhoto}
-            photo1851={promotionsPhoto}
-            photo2797={promotionsPhoto}
-            photo3308={promotionsPhoto}
-            photo3702={promotionsPhoto}
+            photo480={promotionsPhoto480}
+            photo1280={promotionsPhoto1280}
+            photo1851={promotionsPhoto1851}
+            photo2797={promotionsPhoto2797}
+            photo3308={promotionsPhoto3308}
+            photo3702={promotionsPhoto3702}
         />
 
         {/* Advertising Block */}

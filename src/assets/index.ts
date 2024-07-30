@@ -1,16 +1,5 @@
 // Languages Flag Photo
 
-
-// Logo Company Photo
-
-import shrimpsPhoto from './shrimpsPhoto.webp';
-import deliveryPhoto from './deliveryPhoto.webp';
-import promotionsPhoto from './promotionsPhoto.webp';
-import aboutUsPhoto from './aboutUsPhoto.webp';
-
-// Main Product Background
-import productBackground from './productBackground.webp';
-
 // Cray Product Photo
 import crayBoilPhoto from './crayBoilPhoto.webp';
 import crayRawPhoto from './crayRawPhoto.webp';
@@ -43,8 +32,13 @@ import shrimpTiger from './shrimp_tiger.png';
 import crayfish from './crayfish.png';
 
 export * from './crayFishDiffPhoto';
+export * from './shrampDiffPhoto';
+export * from './deliveryDiffPhoto';
+export * from './promotionsDiffPhoto';
+export * from './aboutUsDiffPhoto';
+export * from './productDiffPhoto';
+
 export {
-    mainInfoLogo, shrimpsPhoto, deliveryPhoto, promotionsPhoto, productBackground, aboutUsPhoto, crayBoilPhoto,
-    crayRawPhoto, reviewer_1, reviewer_2, reviewer_3, deliverPhoto, promotion_image_1, promotion_image_2,
-    promotion_image_3, flag_ua, flag_usa, shrimpAtlantic, shrimpLangoust, shrimpBlackSea, shrimpTiger, crayfish,
+    mainInfoLogo, crayBoilPhoto, crayRawPhoto, reviewer_1, reviewer_2, reviewer_3, deliverPhoto, promotion_image_1,
+    promotion_image_2, promotion_image_3, flag_ua, flag_usa, shrimpAtlantic, shrimpLangoust, shrimpBlackSea, shrimpTiger, crayfish,
 };
