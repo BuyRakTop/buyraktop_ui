@@ -31,7 +31,7 @@ export const MainInfoContainer: React.FC<MainInfoContainerProps> = (props: MainI
                     <img src={mainInfoLogo} alt={mainInfoLogo}/>
                 </div>
                 <div className={`${style.infoDelivery} d-flex flex-column justify-content-center align-items-center`}>
-                    <div className={`${style.infoDeliveryText} fw-bold pt-3 pt-md-4`}>{translation('cray_fish.cray_delivery')}</div>
+                    <div className={`${style.infoDeliveryText} fw-bold pt-1 pt-md-2`}>{translation('cray_fish.cray_delivery')}</div>
                     <div className={`${style.infoDeliveryPhone} pt-2`}>{translation('share_info.phone_delivery')}</div>
                 </div>
             </div>

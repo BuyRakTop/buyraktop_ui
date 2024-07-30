@@ -118,12 +118,12 @@ export const CrayCard: React.FC<CrayCardProps> = (props: CrayCardProps) => {
                 <div className="position-absolute z-1 top-0 left-0 right-0 d-flex justify-content-between align-items-center w-100 ps-3">
                     <h3 className={`${style.sizeText} ps-1 pt-3`}>{craySize}</h3>
                     <div className={`${style.craySizeBlock} px-1 pb-2 d-flex align-items-end`}>
-                        <img className={craySize === CraySize.XS ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
-                        <img className={craySize === CraySize.S ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
-                        <img className={craySize === CraySize.M ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
-                        <img className={craySize === CraySize.L ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
-                        <img className={craySize === CraySize.XL ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
-                        <img className={craySize === CraySize.XXL ? `${style.activeSize}` : ''} src={crayfish} alt={crayfish} />
+                        <img className={`${craySize === CraySize.XS ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
+                        <img className={`${craySize === CraySize.S ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
+                        <img className={`${craySize === CraySize.M ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
+                        <img className={`${craySize === CraySize.L ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
+                        <img className={`${craySize === CraySize.XL ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
+                        <img className={`${craySize === CraySize.XXL ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
                     </div>
                 </div>
             </div>

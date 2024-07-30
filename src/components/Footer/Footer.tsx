@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
   const { t: translation } = useTranslation();
 
   return (
-    <div className={`${style.footerContainer} d-flex flex-column flex-md-row px-3 px-md-4 px-xl-5 py-5`}>
+    <div className={`${style.footerContainer} d-flex flex-column flex-md-row px-3 px-md-4 px-xl-5 py-3`}>
       <div className="d-flex justify-content-between pt-3 flex-md-grow-1 ps-xl-5">
         <div className="d-flex flex-column">
           <img className={style.footerLogo} src={mainInfoLogo} alt={mainInfoLogo} />
