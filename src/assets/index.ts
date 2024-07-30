@@ -6,6 +6,13 @@
 
 // Main Background Photo
 import crayfishPhoto from './crayfishPhoto.webp';
+// import mainBackgroundPhoto600 from './crayfishPhoto.webp';
+// import mainBackgroundPhoto800 from './crayfishPhoto.webp';
+// import mainBackgroundPhoto1000 from './crayfishPhoto.webp';
+// import mainBackgroundPhoto1200 from './crayfishPhoto.webp';
+// import mainBackgroundPhoto1600 from './crayfishPhoto.webp';
+// import mainBackgroundPhoto2000 from './crayfishPhoto.webp';
+
 import shrimpsPhoto from './shrimpsPhoto.webp';
 import deliveryPhoto from './deliveryPhoto.webp';
 import promotionsPhoto from './promotionsPhoto.webp';
