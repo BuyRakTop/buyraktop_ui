@@ -10,7 +10,14 @@ import style from './aboutUs.module.scss';
 export const AboutUs: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={aboutUsPhoto} />
+        <MainInfoContainer
+            photo480={aboutUsPhoto}
+            photo1280={aboutUsPhoto}
+            photo1851={aboutUsPhoto}
+            photo2797={aboutUsPhoto}
+            photo3308={aboutUsPhoto}
+            photo3702={aboutUsPhoto}
+        />
 
         {/* Advertising Block */}
         <AdvertisingBlockOne />

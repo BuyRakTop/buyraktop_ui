@@ -3,16 +3,6 @@
 
 // Logo Company Photo
 
-
-// Main Background Photo
-import crayfishPhoto from './crayfishPhoto.webp';
-// import mainBackgroundPhoto600 from './crayfishPhoto.webp';
-// import mainBackgroundPhoto800 from './crayfishPhoto.webp';
-// import mainBackgroundPhoto1000 from './crayfishPhoto.webp';
-// import mainBackgroundPhoto1200 from './crayfishPhoto.webp';
-// import mainBackgroundPhoto1600 from './crayfishPhoto.webp';
-// import mainBackgroundPhoto2000 from './crayfishPhoto.webp';
-
 import shrimpsPhoto from './shrimpsPhoto.webp';
 import deliveryPhoto from './deliveryPhoto.webp';
 import promotionsPhoto from './promotionsPhoto.webp';
@@ -52,8 +42,9 @@ import shrimpBlackSea from './shrimp_blacksea.png';
 import shrimpTiger from './shrimp_tiger.png';
 import crayfish from './crayfish.png';
 
+export * from './crayFishDiffPhoto';
 export {
-    mainInfoLogo, crayfishPhoto, shrimpsPhoto, deliveryPhoto, promotionsPhoto, productBackground, aboutUsPhoto,
-    crayBoilPhoto, crayRawPhoto, reviewer_1, reviewer_2, reviewer_3, deliverPhoto, promotion_image_1, promotion_image_2,
+    mainInfoLogo, shrimpsPhoto, deliveryPhoto, promotionsPhoto, productBackground, aboutUsPhoto, crayBoilPhoto,
+    crayRawPhoto, reviewer_1, reviewer_2, reviewer_3, deliverPhoto, promotion_image_1, promotion_image_2,
     promotion_image_3, flag_ua, flag_usa, shrimpAtlantic, shrimpLangoust, shrimpBlackSea, shrimpTiger, crayfish,
 };

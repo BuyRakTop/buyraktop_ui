@@ -5,7 +5,14 @@ import style from './shrimp.module.scss';
 export const Shrimp: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={shrimpsPhoto} />
+        <MainInfoContainer
+            photo480={shrimpsPhoto}
+            photo1280={shrimpsPhoto}
+            photo1851={shrimpsPhoto}
+            photo2797={shrimpsPhoto}
+            photo3308={shrimpsPhoto}
+            photo3702={shrimpsPhoto}
+        />
 
         {/* Advertising Block */}
         <AdvertisingBlockOne />

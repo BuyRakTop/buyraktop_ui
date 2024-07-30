@@ -11,7 +11,14 @@ import style from './contacts.module.scss';
 export const Contacts: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={crayfishPhoto} />
+        <MainInfoContainer
+            photo480={crayfishPhoto}
+            photo1280={crayfishPhoto}
+            photo1851={crayfishPhoto}
+            photo2797={crayfishPhoto}
+            photo3308={crayfishPhoto}
+            photo3702={crayfishPhoto}
+        />
 
         {/* Advertising Block */}
         <AdvertisingBlockOne />

@@ -9,7 +9,14 @@ import style from './delivery.module.scss';
 export const Delivery: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={deliveryPhoto} />
+        <MainInfoContainer
+            photo480={deliveryPhoto}
+            photo1280={deliveryPhoto}
+            photo1851={deliveryPhoto}
+            photo2797={deliveryPhoto}
+            photo3308={deliveryPhoto}
+            photo3702={deliveryPhoto}
+        />
 
         {/* Advertising Block */}
         <AdvertisingBlockOne />

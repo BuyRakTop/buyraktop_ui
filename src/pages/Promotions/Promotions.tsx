@@ -7,7 +7,14 @@ import style from './promotions.module.scss';
 export const Promotions: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={promotionsPhoto} />
+        <MainInfoContainer
+            photo480={promotionsPhoto}
+            photo1280={promotionsPhoto}
+            photo1851={promotionsPhoto}
+            photo2797={promotionsPhoto}
+            photo3308={promotionsPhoto}
+            photo3702={promotionsPhoto}
+        />
 
         {/* Advertising Block */}
         <AdvertisingBlockOne />

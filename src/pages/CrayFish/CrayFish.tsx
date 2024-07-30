@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { crayBoilPhoto, crayRawPhoto, crayfishPhoto } from '../../assets';
+import {
+    crayfishPhoto480, crayfishPhoto1280, crayfishPhoto1851,
+    crayfishPhoto2797, crayfishPhoto3308, crayfishPhoto3702, 
+    crayBoilPhoto, crayRawPhoto,
+} from '../../assets';
 import {
     MainInfoContainer,
     AdvertisingBlockOne, AdvertisingBlockTwo, 
@@ -12,7 +16,14 @@ import style from './crayFish.module.scss';
 export const CrayFish: React.FC = () => (
     <div className="d-flex flex-column">
         {/* Main Background Photo Block */}
-        <MainInfoContainer mainBackgroundPhoto={crayfishPhoto} />
+        <MainInfoContainer
+            photo480={crayfishPhoto480}
+            photo1280={crayfishPhoto1280}
+            photo1851={crayfishPhoto1851}
+            photo2797={crayfishPhoto2797}
+            photo3308={crayfishPhoto3308}
+            photo3702={crayfishPhoto3702}
+        />
 
         {/* Advertising Block */}
         <AdvertisingBlockOne />
