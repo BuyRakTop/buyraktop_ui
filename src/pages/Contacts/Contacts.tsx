@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import Slider from 'react-slick';
-import ReactLoading from 'react-loading';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
@@ -10,38 +8,22 @@ import { GOOGLE_LOCATION_URL, REVIEWS } from '../../utils';
 import { crayfishPhoto } from '../../assets';
 import style from './contacts.module.scss';
 
-export const Contacts: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    setTimeout(() => setIsLoading(false), 1500);
+export const Contacts: React.FC = () => (
+    <div className="d-flex flex-column">
+        {/* Main Background Photo Block */}
+        <MainInfoContainer mainBackgroundPhoto={crayfishPhoto} />
 
-    return (
-        <div className="d-flex flex-column">
-            {
-                !isLoading
-                    ? (
-                        <>
-                            {/* Main Background Photo Block */}
-                            <MainInfoContainer mainBackgroundPhoto={crayfishPhoto} />
+        {/* Advertising Block */}
+        <AdvertisingBlockOne />
 
-                            {/* Advertising Block */}
-                            <AdvertisingBlockOne />
+        {/* Contacts Block */}
+        <ContactsBlock />
 
-                            {/* Contacts Block */}
-                            <ContactsBlock />
-
-                            {/* Advertising Block */}
-                            <AdvertisingBlockTwo />
-                        </>
-                    )
-                    : (
-                        <div className={`${style.loading} d-flex justify-content-center align-items-center`}>
-                            <ReactLoading type="spinningBubbles" color="#cccccc" height={75} width={75} />
-                        </div>
-                    )
-            }
-        </div>
-    );
-}
+        {/* Advertising Block */}
+        <AdvertisingBlockTwo />
+                        
+    </div>
+);
 
 const ContactsBlock: React.FC = () => {
     const { t: translation } = useTranslation();

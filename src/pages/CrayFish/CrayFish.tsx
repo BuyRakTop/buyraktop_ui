@@ -1,55 +1,29 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import ReactLoading from 'react-loading';
 
+import { crayBoilPhoto, crayRawPhoto, crayfishPhoto } from '../../assets';
 import {
-    crayBoilPhoto,
-    crayRawPhoto,
-    crayfishPhoto,
-} from '../../assets';
-import {
-    AdvertisingBlockOne,
-    AdvertisingBlockTwo,
     MainInfoContainer,
-    CrayCard,
-    CraySize,
-    CrayType,
+    AdvertisingBlockOne, AdvertisingBlockTwo, 
+    CrayCard, CraySize, CrayType,
 } from '../../components';
 import style from './crayFish.module.scss';
 
-export const CrayFish: React.FC = () => {
-    // const [isLoading, setIsLoading] = useState(true);
-    // setTimeout(() => setIsLoading(false), 1500);
-    const isLoading = false;
+export const CrayFish: React.FC = () => (
+    <div className="d-flex flex-column">
+        {/* Main Background Photo Block */}
+        <MainInfoContainer mainBackgroundPhoto={crayfishPhoto} />
 
-    return (
-        <div className="d-flex flex-column">
-            {
-                !isLoading
-                    ? (
-                        <>
-                            {/* Main Background Photo Block */}
-                            <MainInfoContainer mainBackgroundPhoto={crayfishPhoto} />
+        {/* Advertising Block */}
+        <AdvertisingBlockOne />
 
-                            {/* Advertising Block */}
-                            <AdvertisingBlockOne />
+        {/* Products Block */}
+        <CrayBlock />
 
-                            {/* Products Block */}
-                            <CrayBlock />
-
-                            {/* Advertising Block */}
-                            <AdvertisingBlockTwo />
-                        </>
-                    )
-                    : (
-                        <div className={`${style.loading} d-flex justify-content-center align-items-center`}>
-                            <ReactLoading type="spinningBubbles" color="#cccccc" height={75} width={75} />
-                        </div>
-                    )
-            }
-        </div>
-    );
-}
+        {/* Advertising Block */}
+        <AdvertisingBlockTwo />
+    </div>
+);
 
 const CrayBlock: React.FC = () => {
     const { t: translation } = useTranslation();

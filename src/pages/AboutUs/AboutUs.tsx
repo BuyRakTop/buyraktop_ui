@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import ReactLoading from 'react-loading';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf, faThumbsUp, faTruck, faWallet } from '@fortawesome/free-solid-svg-icons';
@@ -9,38 +7,21 @@ import { HOW_COOK_YOUTUBE_URL } from '../../utils';
 import { aboutUsPhoto } from '../../assets';
 import style from './aboutUs.module.scss';
 
-export const AboutUs: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    setTimeout(() => setIsLoading(false), 1500);
+export const AboutUs: React.FC = () => (
+    <div className="d-flex flex-column">
+        {/* Main Background Photo Block */}
+        <MainInfoContainer mainBackgroundPhoto={aboutUsPhoto} />
 
-    return (
-        <div className="d-flex flex-column">
-            {
-                !isLoading
-                    ? (
-                        <>
-                            {/* Main Background Photo Block */}
-                            <MainInfoContainer mainBackgroundPhoto={aboutUsPhoto} />
+        {/* Advertising Block */}
+        <AdvertisingBlockOne />
 
-                            {/* Advertising Block */}
-                            <AdvertisingBlockOne />
+        {/* Content Block */}
+        <AboutUsBlock />
 
-                            {/* Content Block */}
-                            <AboutUsBlock />
-
-                            {/* Advertising Block */}
-                            <AdvertisingBlockTwo />
-                        </>
-                    )
-                    : (
-                        <div className={`${style.loading} d-flex justify-content-center align-items-center`}>
-                            <ReactLoading type="spinningBubbles" color="#cccccc" height={75} width={75} />
-                        </div>
-                    )
-            }
-        </div>
-    );
-}
+        {/* Advertising Block */}
+        <AdvertisingBlockTwo />
+    </div>
+);
 
 const AboutUsBlock: React.FC = () => {
     const { t: translation } = useTranslation();

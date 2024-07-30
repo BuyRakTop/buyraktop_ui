@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { reviewer_1, reviewer_2, reviewer_3 } from '../assets';
 
 export const REVIEWS = [

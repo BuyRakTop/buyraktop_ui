@@ -1,44 +1,24 @@
-import { useState } from 'react';
-import ReactLoading from 'react-loading';
 import { useTranslation } from 'react-i18next';
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
 import { promotion_image_1, promotion_image_2, promotion_image_3, promotionsPhoto } from '../../assets';
 import style from './promotions.module.scss';
 
+export const Promotions: React.FC = () => (
+    <div className="d-flex flex-column">
+        {/* Main Background Photo Block */}
+        <MainInfoContainer mainBackgroundPhoto={promotionsPhoto} />
 
-export const Promotions: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    setTimeout(() => setIsLoading(false), 1500);
+        {/* Advertising Block */}
+        <AdvertisingBlockOne />
 
-    return (
-        <div className="d-flex flex-column">
-            {
-                !isLoading
-                    ? (
-                        <>
-                            {/* Main Background Photo Block */}
-                            <MainInfoContainer mainBackgroundPhoto={promotionsPhoto} />
+        {/* Products Block */}
+        <PromotionContent />
 
-                            {/* Advertising Block */}
-                            <AdvertisingBlockOne />
-
-                            {/* Products Block */}
-                            <PromotionContent />
-
-                            {/* Advertising Block */}
-                            <AdvertisingBlockTwo />
-                        </>
-                    )
-                    : (
-                        <div className={`${style.loading} d-flex justify-content-center align-items-center`}>
-                            <ReactLoading type="spinningBubbles" color="#cccccc" height={75} width={75} />
-                        </div>
-                    )
-            }
-        </div>
-    );
-}
+        {/* Advertising Block */}
+        <AdvertisingBlockTwo />                      
+    </div>
+);
 
 const PromotionContent = () => {
     const { t: translation } = useTranslation();

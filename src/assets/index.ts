@@ -1,13 +1,36 @@
-import mainInfoLogo from './mainInfoLogo.png';
-// import crayfishPhoto from './crayfishPhoto.jpeg';
+// Languages Flag Photo
+
+
+// Logo Company Photo
+
+
+// Main Background Photo
 import crayfishPhoto from './crayfishPhoto.webp';
-import shrimpsPhoto from './shrimpsPhoto.jpg';
-import deliveryPhoto from './deliveryPhoto.jpg';
-import promotionsPhoto from './promotionsPhoto.jpg';
-import aboutUsPhoto from './aboutUsPhoto.jpg';
-import productBackground from './productBackground.jpg';
-import crayBoilPhoto from './crayBoilPhoto.png';
-import crayRawPhoto from './crayRawPhoto.png';
+import shrimpsPhoto from './shrimpsPhoto.webp';
+import deliveryPhoto from './deliveryPhoto.webp';
+import promotionsPhoto from './promotionsPhoto.webp';
+import aboutUsPhoto from './aboutUsPhoto.webp';
+
+// Main Product Background
+import productBackground from './productBackground.webp';
+
+// Cray Product Photo
+import crayBoilPhoto from './crayBoilPhoto.webp';
+import crayRawPhoto from './crayRawPhoto.webp';
+
+// Shramp Product Photo
+import shrimpLangoust from './shrimp_langoust.webp';
+
+// Delivery Page
+
+
+// Promotions Page
+
+
+// Contacts Page
+
+
+import mainInfoLogo from './mainInfoLogo.png';
 import reviewer_1 from './reviewer_1.png';
 import reviewer_2 from './reviewer_2.png';
 import reviewer_3 from './reviewer_3.png';
@@ -18,7 +41,6 @@ import promotion_image_3 from './promotion_image_3.png';
 import flag_ua from './flag_ua.png';
 import flag_usa from './flag_usa.png';
 import shrimpAtlantic from './shrimp_atlantic.png';
-import shrimpLangoust from './shrimp_langoust.png';
 import shrimpBlackSea from './shrimp_blacksea.png';
 import shrimpTiger from './shrimp_tiger.png';
 import crayfish from './crayfish.png';
