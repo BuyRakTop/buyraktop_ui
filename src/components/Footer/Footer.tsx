@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
           >&#169;BuyRak.Tor 2024</Link>
         </div>
 
-        <div className="d-flex flex-column text-end gap-2">
+        <div className="d-flex flex-column text-end text-md-start gap-2">
           <div className={style.footerNavItem}>
             <Link to='/cray-fish'>{translation('cray_fish.cray_fish')}</Link>
           </div>

@@ -2,114 +2,23 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 
+import { crayFishPhoto } from '../../assets';
+import { CraySize } from '../../utils';
 import style from './crayCard.module.scss';
-import { crayfish } from '../../assets';
 
 interface CrayCardProps {
     isAvailable: boolean;
     crayPhoto: string;
     craySize: CraySize;
-    crayType: CrayType;
-}
-
-export enum CraySize {
-    XS = "XS",
-    S = "S",
-    M = "M",
-    L = "L",
-    XL = "XL",
-    XXL = "XXL",
-}
-
-export enum CrayType {
-    RAW = "raw",
-    BOIL = "boil",
-}
-
-const crayData = {
-    [CrayType.BOIL]: {
-        [CraySize.XS]: {
-            weightItem: "10 - 20",
-            sizeItem: "6 - 8",
-            countItem: "50 - 100",
-            priceItem: "500",
-        },
-        [CraySize.S]: {
-            weightItem: "20 - 40",
-            sizeItem: "8 - 12",
-            countItem: "30 - 33",
-            priceItem: "600",
-        },
-        [CraySize.M]: {
-            weightItem: "40 - 60",
-            sizeItem: "12 - 15",
-            countItem: "20 - 23",
-            priceItem: "700",
-        },
-        [CraySize.L]: {
-            weightItem: "60 - 80",
-            sizeItem: "15 - 17",
-            countItem: "15 - 17",
-            priceItem: "800",
-        },
-        [CraySize.XL]: {
-            weightItem: "80 - 100",
-            sizeItem: "17 - 20",
-            countItem: "10 - 12",
-            priceItem: "900",
-        },
-        [CraySize.XXL]: {
-            weightItem: "100+",
-            sizeItem: "20+",
-            countItem: "10",
-            priceItem: "1000",
-        },
-    },
-    [CrayType.RAW]: {
-        [CraySize.XS]: {
-            weightItem: "10 - 20",
-            sizeItem: "6 - 8",
-            countItem: "50 - 100",
-            priceItem: "400",
-        },
-        [CraySize.S]: {
-            weightItem: "20 - 40",
-            sizeItem: "8 - 12",
-            countItem: "30 - 33",
-            priceItem: "500",
-        },
-        [CraySize.M]: {
-            weightItem: "40 - 60",
-            sizeItem: "12 - 15",
-            countItem: "20 - 23",
-            priceItem: "600",
-        },
-        [CraySize.L]: {
-            weightItem: "60 - 80",
-            sizeItem: "15 - 17",
-            countItem: "15 - 17",
-            priceItem: "700",
-        },
-        [CraySize.XL]: {
-            weightItem: "80 - 100",
-            sizeItem: "17 - 20",
-            countItem: "10 - 12",
-            priceItem: "800",
-        },
-        [CraySize.XXL]: {
-            weightItem: "100+",
-            sizeItem: "20+",
-            countItem: "10",
-            priceItem: "900",
-        },
-    },
+    weightItem: string;
+    sizeItem: string;
+    countItem: string;
+    priceItem: number;
 }
 
 export const CrayCard: React.FC<CrayCardProps> = (props: CrayCardProps) => {
     const { t: translation } = useTranslation();
-
-    const { isAvailable, crayPhoto, craySize, crayType } = props;
-    const { weightItem, sizeItem, countItem, priceItem } = crayData[crayType][craySize];
+    const { isAvailable, crayPhoto, craySize, weightItem, sizeItem, countItem, priceItem } = props;
 
     return (
         <div className={`${style.card} d-flex flex-column gap-3 pb-3 rounded-5`}>
@@ -118,12 +27,12 @@ export const CrayCard: React.FC<CrayCardProps> = (props: CrayCardProps) => {
                 <div className="position-absolute z-1 top-0 left-0 right-0 d-flex justify-content-between align-items-center w-100 ps-3">
                     <h3 className={`${style.sizeText} ps-1 pt-3`}>{craySize}</h3>
                     <div className={`${style.craySizeBlock} px-1 pb-2 d-flex align-items-end`}>
-                        <img className={`${craySize === CraySize.XS ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
-                        <img className={`${craySize === CraySize.S ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
-                        <img className={`${craySize === CraySize.M ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
-                        <img className={`${craySize === CraySize.L ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
-                        <img className={`${craySize === CraySize.XL ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
-                        <img className={`${craySize === CraySize.XXL ? `${style.activeSize}` : ''} w-100`} src={crayfish} alt={crayfish} />
+                        <img className={`${craySize === CraySize.XS ? `${style.activeSize}` : ''} w-100`} src={crayFishPhoto} alt={crayFishPhoto} />
+                        <img className={`${craySize === CraySize.S ? `${style.activeSize}` : ''} w-100`} src={crayFishPhoto} alt={crayFishPhoto} />
+                        <img className={`${craySize === CraySize.M ? `${style.activeSize}` : ''} w-100`} src={crayFishPhoto} alt={crayFishPhoto} />
+                        <img className={`${craySize === CraySize.L ? `${style.activeSize}` : ''} w-100`} src={crayFishPhoto} alt={crayFishPhoto} />
+                        <img className={`${craySize === CraySize.XL ? `${style.activeSize}` : ''} w-100`} src={crayFishPhoto} alt={crayFishPhoto} />
+                        <img className={`${craySize === CraySize.XXL ? `${style.activeSize}` : ''} w-100`} src={crayFishPhoto} alt={crayFishPhoto} />
                     </div>
                 </div>
             </div>

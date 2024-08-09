@@ -6,14 +6,14 @@ import { faInstagram, faTelegram, faViber } from '@fortawesome/free-brands-svg-i
 import { faUserLock, faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { MobileMenu } from '../MobileMenu/MobileMenu';
+import { flagUSA, flagUA } from '../../assets';
 import style from './header.module.scss';
-import { flag_ua, flag_usa } from '../../assets';
 
 export const Header: React.FC = () => {
   const { t: translation } = useTranslation();
   const [isOpenMenu, setOpenMenu] = useState(false);
   const [isNativeLang, setIsNativeLang] = useState(true);
-  const backgroundLangPhoto = isNativeLang ? flag_ua : flag_usa;
+  const backgroundLangPhoto = isNativeLang ? flagUA : flagUSA;
 
   return (
     <div className={`${style.headerContainer} px-3 px-md-4 px-xl-5 d-flex justify-content-between align-items-center`}>

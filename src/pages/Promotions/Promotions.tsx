@@ -2,7 +2,10 @@ import { useTranslation } from 'react-i18next';
 
 import { AdvertisingBlockOne, AdvertisingBlockTwo, MainInfoContainer } from '../../components';
 import {
-    promotion_image_1, promotion_image_2, promotion_image_3, promotionsPhoto1280, promotionsPhoto1851,
+    promotion_image_1,
+    promotion_image_2,
+    promotion_image_3,
+    promotionsPhoto1280, promotionsPhoto1851,
     promotionsPhoto2797, promotionsPhoto3308, promotionsPhoto3702, promotionsPhoto480,
 } from '../../assets';
 import style from './promotions.module.scss';

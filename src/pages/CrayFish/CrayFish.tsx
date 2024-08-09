@@ -1,16 +1,9 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import {
-    crayfishPhoto480, crayfishPhoto1280, crayfishPhoto1851,
-    crayfishPhoto2797, crayfishPhoto3308, crayfishPhoto3702, 
-    crayBoilPhoto, crayRawPhoto,
-} from '../../assets';
-import {
-    MainInfoContainer,
-    AdvertisingBlockOne, AdvertisingBlockTwo, 
-    CrayCard, CraySize, CrayType,
-} from '../../components';
+import { crayfishPhoto480, crayfishPhoto1280, crayfishPhoto1851, crayfishPhoto2797, crayfishPhoto3308, crayfishPhoto3702 } from '../../assets';
+import { MainInfoContainer, AdvertisingBlockOne, AdvertisingBlockTwo, CrayCard } from '../../components';
+import { CRAYFISH, CrayType } from '../../utils';
 import style from './crayFish.module.scss';
 
 export const CrayFish: React.FC = () => (
@@ -84,23 +77,41 @@ const CrayBlock: React.FC = () => {
                 <div id="pills-tabContent" className="tab-content pt-4">
                     <div id="cray-boil-pills" className="tab-pane fade show active" role="tabpanel" aria-labelledby="cray-boil-tab">
                         <div className={`${style.cardsBlock} d-flex flex-wrap justify-content-center align-items-center w-100 gap-3`}>
-                            <CrayCard isAvailable={true} crayPhoto={crayBoilPhoto} craySize={CraySize.XS} crayType={CrayType.BOIL} />
-                            <CrayCard isAvailable={true} crayPhoto={crayBoilPhoto} craySize={CraySize.S} crayType={CrayType.BOIL} />
-                            <CrayCard isAvailable={false} crayPhoto={crayBoilPhoto} craySize={CraySize.M} crayType={CrayType.BOIL} />
-                            <CrayCard isAvailable={true} crayPhoto={crayBoilPhoto} craySize={CraySize.L} crayType={CrayType.BOIL} />
-                            <CrayCard isAvailable={true} crayPhoto={crayBoilPhoto} craySize={CraySize.XL} crayType={CrayType.BOIL} />
-                            <CrayCard isAvailable={true} crayPhoto={crayBoilPhoto} craySize={CraySize.XXL} crayType={CrayType.BOIL} />
+                            {
+                                CRAYFISH.map(({ id, isAvailable, photo, craySize, crayType, weight, size, count, price }) => (
+                                    crayType === CrayType.BOIL
+                                    && <CrayCard
+                                        key={id}
+                                        isAvailable={isAvailable}
+                                        crayPhoto={photo}
+                                        craySize={craySize}
+                                        weightItem={weight}
+                                        sizeItem={size}
+                                        countItem={count}
+                                        priceItem={price}
+                                    />
+                                ))
+                            }
                         </div>
                     </div>
 
                     <div id="cray-raw-pills" className="tab-pane fade" role="tabpanel" aria-labelledby="cray-raw-tab">
                         <div className={`${style.cardsBlock} d-flex flex-wrap justify-content-center align-items-center w-100 gap-3`}>
-                            <CrayCard isAvailable={true} crayPhoto={crayRawPhoto} craySize={CraySize.XS} crayType={CrayType.RAW} />
-                            <CrayCard isAvailable={true} crayPhoto={crayRawPhoto} craySize={CraySize.S} crayType={CrayType.RAW} />
-                            <CrayCard isAvailable={true} crayPhoto={crayRawPhoto} craySize={CraySize.M} crayType={CrayType.RAW} />
-                            <CrayCard isAvailable={true} crayPhoto={crayRawPhoto} craySize={CraySize.L} crayType={CrayType.RAW} />
-                            <CrayCard isAvailable={true} crayPhoto={crayRawPhoto} craySize={CraySize.XL} crayType={CrayType.RAW} />
-                            <CrayCard isAvailable={true} crayPhoto={crayRawPhoto} craySize={CraySize.XXL} crayType={CrayType.RAW} />
+                            {
+                                CRAYFISH.map(({ id, isAvailable, photo, craySize, crayType, weight, size, count, price }) => (
+                                    crayType === CrayType.RAW
+                                    && <CrayCard
+                                        key={id}
+                                        isAvailable={isAvailable}
+                                        crayPhoto={photo}
+                                        craySize={craySize}
+                                        weightItem={weight}
+                                        sizeItem={size}
+                                        countItem={count}
+                                        priceItem={price}
+                                    />
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
